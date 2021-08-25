@@ -4,14 +4,14 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch
   # CHANGE TO YOUR BRANCH
   push:
-    branches: [ <yourbranch> ]
+    branches: [ my-github-ci-cd ]
 
 jobs:
   build:
     runs-on: self-hosted
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/siemens
 
       - name: Building docker images
         run: |
