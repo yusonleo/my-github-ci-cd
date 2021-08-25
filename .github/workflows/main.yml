@@ -4,7 +4,7 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch
   # CHANGE TO YOUR BRANCH
   push:
-    branches: [ my-github-ci-cd ]
+    branches: [ main ]
 
 jobs:
   build:
